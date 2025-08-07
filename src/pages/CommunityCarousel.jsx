@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../Styles/CommunityCarousel.css";
 
+
+//community carousel
+
 const images = [
   {
     id: 1,
