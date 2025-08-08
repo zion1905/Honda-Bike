@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/AccessoryList .css';
+import '../../Styles/AccessoryList.css';
 
 const accessories = [
   {
