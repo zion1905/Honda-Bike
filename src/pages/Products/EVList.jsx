@@ -1,6 +1,6 @@
 // src/pages/Products/EVList.jsx
 import React from 'react';
-import '../../Styles/evlist.css';
+import '../../styles/evlist.css';
 
 const evProducts = [
   {

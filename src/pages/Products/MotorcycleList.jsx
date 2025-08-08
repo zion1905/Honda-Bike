@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/motorcyclelist.css';
+import '../../styles/motorcyclelist.css';
 
 const hondaBikes = [
     { name: "Shine100", image: "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/menu/RedWing/shine-100.jpg?h=240&iar=0&w=360" },
