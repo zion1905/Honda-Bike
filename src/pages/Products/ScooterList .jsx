@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/ScooterList .css';
+import '../../Styles/scooterlist .css';
 
 const scooters = [
   {

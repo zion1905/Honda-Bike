@@ -1,5 +1,7 @@
 import React from 'react';
-import '../Styles/Footer.css';
+import '<div styleName={} />
+<Styles />
+<f></f>ooter.css';
 import {
   FaFacebookF,
   FaInstagram,

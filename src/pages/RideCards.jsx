@@ -1,6 +1,6 @@
 // RideCards.jsx
 import React from 'react';
-import '../styles/RideCards.css';
+import '../styles/ridecards.css';
 
 const rideData = [
   {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../Styles/CommunityCarousel.css";
+import "../Styles/communitycarousel.css";
 
 const images = [
   {
