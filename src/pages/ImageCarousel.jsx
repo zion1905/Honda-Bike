@@ -1,10 +1,11 @@
-// import React from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../styles/imagecarousel.css';
+import '../styles/ImageCarousel.css';
+
 import  { useEffect, useState } from "react";
 
 const images = [
@@ -22,19 +23,17 @@ const cards = [
     desc: 'Create a culture of safe rides',
     image: 'https://unioncountylibraries.org/wp-content/uploads/bicycle-helmets.jpg',
   },
- 
+  {
+    title: 'CSR',
+    desc: 'Empowering communitites through meaningful action',
+    image: 'https://media.istockphoto.com/id/1344398972/photo/wind-turbines-are-alternative-electricity-sources-the-concept-of-sustainable-resources-people.jpg?s=612x612&w=0&k=20&c=PC9qGntFaKjhZ0o7HANP08pqK1_uq-faE49f9JLPg_4=',
+  },
   {
     title: 'Shine 100',
     desc: '100cc commuter motorcycle designed for fuel efficiency and practicality in urban environments',
     image: 'https://cdn.bikedekho.com/processedimages/honda/shine-100/source/shine-1006809d88b5ffc6.jpg',
   },
-   {
-    title: 'CSR',
-    desc: 'Empowering communitites through meaningful action',
-    image: 'https://media.istockphoto.com/id/1344398972/photo/wind-turbines-are-alternative-electricity-sources-the-concept-of-sustainable-resources-people.jpg?s=612x612&w=0&k=20&c=PC9qGntFaKjhZ0o7HANP08pqK1_uq-faE49f9JLPg_4=',
-  },
 ];
- 
 
 const ImageCarousel = () => {
    const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +41,7 @@ const ImageCarousel = () => {
   useEffect(() => {
     const loop = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); 
+    }, 4000); // 4 seconds
     return () => clearInterval(loop);
   }, [])
   return (
