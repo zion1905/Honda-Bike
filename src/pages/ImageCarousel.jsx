@@ -1,11 +1,10 @@
-import React from 'react';
+// import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../styles/imagecarousel.css';
-
 import  { useEffect, useState } from "react";
 
 const images = [
@@ -35,6 +34,7 @@ const cards = [
     image: 'https://media.istockphoto.com/id/1344398972/photo/wind-turbines-are-alternative-electricity-sources-the-concept-of-sustainable-resources-people.jpg?s=612x612&w=0&k=20&c=PC9qGntFaKjhZ0o7HANP08pqK1_uq-faE49f9JLPg_4=',
   },
 ];
+ 
 
 const ImageCarousel = () => {
    const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +42,7 @@ const ImageCarousel = () => {
   useEffect(() => {
     const loop = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // 4 seconds
+    }, 4000); 
     return () => clearInterval(loop);
   }, [])
   return (

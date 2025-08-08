@@ -10,6 +10,7 @@ import {
   FaClipboardList
 } from 'react-icons/fa';
 
+
 const Footer = () => {
   return (
     <>
