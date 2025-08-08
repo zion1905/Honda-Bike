@@ -1,4 +1,3 @@
-// RideCards.jsx
 import React from 'react';
 import '../Styles/RideCards.css';
 
