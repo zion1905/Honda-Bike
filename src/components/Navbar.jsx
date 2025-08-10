@@ -73,7 +73,7 @@ const Navbar = () => {
             </ul>
           )}
         </li>
- <li
+        <li
           className="dropdown"
           onMouseEnter={() => handleMouseEnter('contact')}
           onMouseLeave={handleMouseLeave}
