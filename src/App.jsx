@@ -8,11 +8,14 @@ import HomePage from "./pages/HomePage";
 import RideCards from "./pages/RideCards";
 import ImageCarousel from "./pages/ImageCarousel";
 import CommunityCarousel from './pages/CommunityCarousel';
-import EVList from "./pages/Products/EVList"; // Make sure this exists
-import MotorcycleList from "./pages/Products/MotorcycleList";
-import ScooterList from "./pages/Products/ScooterList ";
-import AccessoryList from "./pages/Products/AccessoryList ";
-import DealerNetworkSection from "./pages/dealer/DealerNetworkSection";
+import EVList from "./pages/sales/EVList"; // Make sure this exists
+import ScooterList from "./pages/sales/ScooterList ";
+// import DealerNetworkSection from "./pages/dealer/DealerNetworkSection";
+import EVOverview from "./pages/EVOverview";
+import EVComparison from "./pages/EVComparison";
+import EVColours from "./pages/EVColours";
+import BikeList from "./pages/sales/BikeList ";
+import ContactForm from "./pages/ContactForm ";
 // import ExtendedWarranty from "./pages/Services/Maintenance/ExtendedWarranty";
 
 function App() {
@@ -32,12 +35,14 @@ function App() {
           }
         />
         <Route path="/evlist" element={<EVList />} />
-        <Route path="/motorcycle-page" element={<MotorcycleList/>} />
+        <Route path="/bike-list" element={<BikeList/>} />
    
         <Route path= "/scooter-page" element ={<ScooterList/>} />
-        <Route path ='/accessory-section' element ={<AccessoryList/>} />
-        <Route path="/dealer-content" element ={<DealerNetworkSection/>} />
+        <Route path="/ev-overview-container" element ={<EVOverview/>} />
         {/* <Route path="/coverage-section" element ={<ExtendedWarranty/>}/> */}
+        <Route path="/comparison-container" element = {<EVComparison/>} />
+        <Route path="/ev-colours-container" element = {<EVColours/>} />
+        <Route path="/contact-container" element = {<ContactForm/>} />
       </Routes>
       <Footer />
     </>

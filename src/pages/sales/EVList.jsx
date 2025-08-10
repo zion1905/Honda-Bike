@@ -1,16 +1,14 @@
 // src/pages/Products/EVList.jsx
 import React from 'react';
 import '../../Styles/EvList.css';
-
+import {Link} from 'react-router-dom'
 const evProducts = [
   {
     name: 'ACTIVA e:',
-    colors: ['#a6d8db', '#c0c0c0', '#404040', '#e6e6e6', '#5b5dbb'],
     image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/honda-activa-e-standard1732724252825.jpg?q=80',
   },
   {
     name: 'QC1',
-    colors: ['#a6d8db', '#c0c0c0', '#404040', '#e6e6e6', '#5b5dbb'],
     image: 'https://images.timesdrive.in/thumb/msid-151101288,thumbsize-632775,width-450,height-254,resizemode-75/151101288.jpg',
   },
 ];
@@ -18,6 +16,14 @@ const evProducts = [
 const EVList = () => {
   return (
     <>
+          {/* Banner Section */}
+      <div className="ev-banner">
+        <img
+          src="https://static.toiimg.com/photo/115743761.cms"
+          alt="EV Banner"
+          className="ev-banner-image"
+        />
+      </div>
       <div id='ev-list'></div>
       <div className="ev-list">
         {evProducts.map((product, index) => (
@@ -25,19 +31,10 @@ const EVList = () => {
             <img src={product.image} alt={product.name} className="ev-image" />
             <div className="ev-details">
               <h2>{product.name}</h2>
-              <div className="ev-colors">
-                <span>Colors:</span>
-                {product.colors.map((color, i) => (
-                  <span
-                    key={i}
-                    className="color-dot"
-                    style={{ backgroundColor: color }}
-                  ></span>
-                ))}
-              </div>
-              <button className="explore-button">
+
+              <Link to="/ev-overview-container" className="explore-button">
                 Explore <span>↗</span>
-              </button>
+              </Link>
             </div>
           </div>
         ))}

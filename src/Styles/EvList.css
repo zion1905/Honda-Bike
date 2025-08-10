@@ -1,4 +1,17 @@
-/* EVList.css */
+/* Banner Section */
+.ev-banner {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.ev-banner-image {
+  width: 100%;
+  height: auto; /* keeps full image proportion */
+  display: block;
+}
+
+
 
 .ev-list {
   padding: 40px 20px;
