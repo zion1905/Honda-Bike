@@ -28,8 +28,8 @@ const Navbar = () => {
           )}
         </li>
 
-       
-         
+
+
 
         <li
           className="dropdown"
@@ -41,7 +41,7 @@ const Navbar = () => {
             <ul className="dropdown-menu">
 
               <li className="dropdown-submenu">
-               
+
               </li>
 
               <li><Link to="/warranty">Warranty</Link></li>
@@ -63,7 +63,7 @@ const Navbar = () => {
               <li><Link to="#">Corpotrate</Link></li>
               <li><Link to="#">Honda Globel</Link></li>
               <li><Link to="#">Honda cars Indian Ltd</Link></li>
-                            <li><Link to="#">Honda Globel</Link></li>
+              <li><Link to="#">Honda Globel</Link></li>
               <li><Link to="#">Honda car Indian power sales Ltd</Link></li>
               <li><Link to="#">Honda power pack Enerdy Pvt Ltd</Link></li>
               <li><Link to="#">Technology</Link></li>
@@ -73,12 +73,7 @@ const Navbar = () => {
             </ul>
           )}
         </li>
-
-     
-
-        
-
-        <li
+ <li
           className="dropdown"
           onMouseEnter={() => handleMouseEnter('contact')}
           onMouseLeave={handleMouseLeave}
@@ -86,7 +81,7 @@ const Navbar = () => {
           <Link to="/contact-container">Contact Us </Link>
           {openDropdown === 'contact' && (
             <ul className="dropdown-menu">
-            
+
             </ul>
           )}
         </li>
