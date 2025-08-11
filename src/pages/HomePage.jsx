@@ -7,13 +7,13 @@ const HomePage = () => {
     <div className="homepage">
       {/* Embedded YouTube Background Video */}
       <div className="video-background">
-        <iframe
+        {/* <iframe
           src="https://www.youtube.com/embed/BYorH-BYVlU?autoplay=1&mute=1&loop=1&playlist=BYorH-BYVlU&controls=0&showinfo=0&modestbranding=1"
           frameBorder="0"
           allow="autoplay; fullscreen"
           allowFullScreen
           title="Background Video"
-        ></iframe>
+        ></iframe> */}
       </div>
 
       <div className="homepage-overlay">

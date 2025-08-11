@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../Styles/EVList.css";
+import "../../Styles/EvList.css";
 
 const EVList = () => {
   const evs = [
