@@ -1,114 +1,90 @@
-/* Overall Page Wrapper */
-.scooter-page {
-  width: 100%;
-  background-color: #f5f5f5;
-  font-family: sans-serif;
+/* src/Styles/ScooterList.css */
+
+.scooter-list {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
-/* === VIDEO BANNER === */
-.video-banner {
-  position: relative;
-  width: 100%;
-  height: 60vh;
+.scooter-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-}
-
-.banner-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-overlay-text {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 20px;
-  font-size: 14px;
-  width: 100%;
-  text-align: center;
-}
-
-/* === SCOOTER ONE-BY-ONE CONTAINER === */
-.scooter-grid {
+  width: 320px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 40px 20px;
-}
-
-/* === Each Rectangle === */
-.scooter-card {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .scooter-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-/* === Image Left Side === */
 .scooter-card img {
-  width: 250px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* === Text + Button Right Side === */
-.scooter-card h3 {
-  font-size: 24px;
-  color: #d50000;
-  margin-bottom: 10px;
+.scooter-card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.scooter-card p {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
+.scooter-card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
 }
 
-.scooter-card .explore-btn {
-  background-color: #d50000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
+.scooter-price {
+  font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+  color: #2a7a2a;
 }
 
-.scooter-card .explore-btn:hover {
-  background-color: #a30000;
+.scooter-price-note {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 12px;
 }
 
-/* === Right Section Container === */
-.scooter-card > div {
-  padding-left: 30px;
-  flex: 1;
+.scooter-description {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.4;
 }
 
-/* === Responsive Mobile View === */
-@media screen and (max-width: 768px) {
+.scooter-explore {
+  display: inline-block;
+  text-align: center;
+  background-color: #2a7a2a;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.scooter-explore:hover {
+  background-color: #236423;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .scooter-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .scooter-card img {
     width: 100%;
-    max-width: 300px;
-  }
-
-  .scooter-card > div {
-    padding-left: 0;
-    margin-top: 20px;
+    max-width: 400px;
   }
 }

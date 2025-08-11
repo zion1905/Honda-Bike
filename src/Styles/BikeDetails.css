@@ -1,0 +1,70 @@
+/* src/Styles/BikeDetails.css */
+
+.bike-details-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.bike-details-container h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.bike-main-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.bike-price {
+  font-size: 1.4rem;
+  color: #e53935;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.color-picker {
+  margin-top: 25px;
+}
+
+.color-picker h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.color-picker button {
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.color-picker button:hover {
+  transform: scale(1.1);
+  border-color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bike-details-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .bike-details-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .bike-price {
+    font-size: 1.2rem;
+  }
+}

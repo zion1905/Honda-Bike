@@ -1,98 +1,84 @@
-/* Banner Section */
-.ev-banner {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
+/* EVList.css */
 
-.ev-banner-image {
-  width: 100%;
-  height: auto; /* keeps full image proportion */
-  display: block;
-}
-
-
-
+/* Container styling */
 .ev-list {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.ev-card {
-  display: flex;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 20px;
   gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  background-color: #f9f9f9;
 }
 
-.ev-image {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
+/* Card styling */
+.ev-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.ev-details {
-  flex: 1;
+.ev-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-.ev-details h2 {
-  margin: 0 0 10px;
-  font-size: 1.8rem;
-  color: #333;
+/* Image styling */
+.ev-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.ev-colors {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+/* Text content */
+.ev-card-content {
+  padding: 15px;
 }
 
-.color-dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
+.ev-card-content h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 8px;
 }
 
-.explore-button {
-  background-color: #d90000;
-  color: white;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 999px;
+.ev-price {
   font-size: 1rem;
   font-weight: bold;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: background-color 0.3s ease;
+  color: #e53935;
 }
 
-.explore-button:hover {
-  background-color: #b80000;
+.ev-price-note {
+  font-size: 0.85rem;
+  color: #777;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.ev-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Explore link button */
+.ev-explore {
+  display: inline-block;
+  background-color: #d6001c; /* Honda red */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.25s ease;
+}
+
+.ev-explore:hover {
+  background-color: #b00017;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
   .ev-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .ev-image {
     width: 100%;
-    max-width: 300px;
   }
 }

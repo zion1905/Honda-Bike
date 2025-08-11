@@ -1,31 +1,44 @@
+/* src/Styles/ImageCarousel.css */
+
+/* ===== Carousel Section ===== */
 .carousel-section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   background: #fff;
+  text-align: center;
 }
 
 .carousel-heading {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #002855;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  color: #c00000; /* Honda red */
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+/* Swiper container */
 .carousel-swiper {
-  padding: 0 20px;
+  padding-bottom: 40px; /* space for pagination dots */
 }
 
+/* ===== Carousel Cards ===== */
 .carousel-card {
-  background: #f9f9f9;
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card-image-wrapper {
+  width: 100%;
+  height: 180px;
   overflow: hidden;
-  height: 200px;
 }
 
 .card-image {
@@ -42,86 +55,114 @@
 
 .card-content {
   padding: 20px;
-  text-align: center;
 }
 
 .card-content h3 {
-  margin: 10px 0;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
 }
 
 .card-content p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
 }
 
 .read-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #e60000;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c00000;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .read-more span {
-  font-size: 1.2rem;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
 }
 
-/* Hero Static Banner */
+.read-more:hover {
+  color: #900000;
+}
+
+.read-more:hover span {
+  transform: translateX(4px);
+}
+
+/* ===== Hero Banner Below Carousel ===== */
 .hero-banner {
-  background-image: url('https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg');
+  position: relative;
+  width: 100%;
+  height: 450px;
   background-size: cover;
   background-position: center;
-  height: 500px;
-  margin: 60px auto 0;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .hero-content {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  color: white;
-  max-width: 600px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
 }
 
 .hero-subtitle {
-  font-weight: bold;
-  background: #e60000;
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 
 .hero-title {
   font-size: 3rem;
-  font-weight: 900;
-  letter-spacing: 1px;
+  font-weight: 800;
+  margin: 10px 0;
+  letter-spacing: 2px;
 }
 
 .hero-desc {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .hero-button {
-  margin-top: 20px;
-  background-color: #e60000;
-  color: white;
-  padding: 12px 24px;
+  background: #c00000;
+  color: #fff;
   border: none;
+  padding: 12px 30px;
   font-size: 1rem;
+  font-weight: 600;
   border-radius: 30px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .hero-button:hover {
-  background-color: #c00000;
+  background: #900000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-desc {
+    font-size: 1rem;
+  }
+  .carousel-heading {
+    font-size: 1.5rem;
+  }
 }

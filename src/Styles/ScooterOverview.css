@@ -1,0 +1,121 @@
+/* ===============================
+   Scooter Overview Styles
+================================== */
+
+.scooter-overview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Tabs ---------- */
+.scooter-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 25px;
+}
+
+.scooter-tabs span,
+.scooter-tabs a {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scooter-tabs span.active,
+.scooter-tabs a:hover {
+  color: #e4002b; /* Honda red */
+  border-bottom: 3px solid #e4002b;
+  font-weight: bold;
+}
+
+/* ---------- Content ---------- */
+.scooter-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.scooter-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scooter-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.scooter-details {
+  flex: 1 1 50%;
+}
+
+.scooter-details h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.price {
+  font-size: 20px;
+  color: #e4002b;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  margin-left: 6px;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* ---------- Book Now Button ---------- */
+.booking {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e4002b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.booking:hover {
+  background-color: #c00024;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .scooter-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scooter-details {
+    text-align: center;
+  }
+
+  .scooter-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
