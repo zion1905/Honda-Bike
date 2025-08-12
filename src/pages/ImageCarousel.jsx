@@ -9,9 +9,9 @@ import '../Styles/ImageCarousel.css'
 import  { useEffect, useState } from "react";
 
 const images = [
-  "https://5.imimg.com/data5/SELLER/Default/2024/1/378686825/HB/XV/ZJ/101065295/honda-cb-200x-184cc-bike-500x500.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9zChTMwY188AuYmaYhLvXgmPARwginxWDzRTQyOY7hQsKBfB9VGHxKQpCC09zQ5UU0O8&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-Cu5FxV9wjVasIaW-gSJOuzgMCLyEnCMNZWPq56X14ZJLXpZW7LRi2ASdCLH2ubBt_I&usqp=CAU",
+  "https://media.gettyimages.com/id/458730149/photo/honda-cb-750-four-vintage-motorcycle-in-studio-shoot.jpg?s=612x612&w=gi&k=20&c=LUR68uFUx_X7is97l3PTmXBf4UkoDwaSP5kRKY9ugVA=",
+  "https://cdn.bikedekho.com/processedimages/honda/sp125/source/sp1256789ead2971d1.jpg",
+  "https://images5.alphacoders.com/329/329291.jpg",
 ];
 
  
@@ -75,9 +75,7 @@ const ImageCarousel = () => {
                 <div className="card-content">
                   <h3>{card.title}</h3>
                   <p>{card.desc}</p>
-                  <a href="#" className="read-more">
-                    Read more <span>↗</span>
-                  </a>
+                
                 </div>
               </div>
             </SwiperSlide>

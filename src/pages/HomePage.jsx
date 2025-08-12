@@ -6,15 +6,13 @@ const HomePage = () => {
   return (
     <div className="homepage">
       {/* Embedded YouTube Background Video */}
-      <div className="video-background">
-        {/* <iframe
-          src="https://www.youtube.com/embed/BYorH-BYVlU?autoplay=1&mute=1&loop=1&playlist=BYorH-BYVlU&controls=0&showinfo=0&modestbranding=1"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          title="Background Video"
-        ></iframe> */}
-      </div>
+   <div className="banner-image">
+  <img 
+    src="https://images.pexels.com/photos/33203566/pexels-photo-33203566/free-photo-of-nighttime-motorcycle-ride-with-rider-on-honda.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+    alt="Banner" 
+  />
+</div>
+
 
       <div className="homepage-overlay">
         <h1>Cumulative Motorcycle Production</h1>

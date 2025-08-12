@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">HONDA</div>
+      <Link to="/" className="navbar-logo">HONDA</Link>
 
       <ul className="navbar-links">
         <li

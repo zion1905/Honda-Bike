@@ -13,8 +13,9 @@ const BikeDetails = () => {
     <div className="bike-details-container">
       <h1>{bike.name}</h1>
       <img src={selectedImage} alt={bike.name} className="bike-main-image" />
-
-      <p className="bike-price">Price: {bike.price}</p>
+<h1 className="bike-price">price: <span  className="bike-details"> {bike.price}</span></h1>
+     
+     <h1 className="bike-price">description: <span className="bike-details"> {bike.description}</span></h1>
 
       <div className="color-picker">
         <h3>Choose Color:</h3>

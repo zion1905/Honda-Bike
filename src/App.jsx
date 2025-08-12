@@ -19,6 +19,7 @@ import ContactForm from "./pages/ContactForm ";
 import BikeDetails from "./pages/BikeDetails";
 import ScooterOverview from "./pages/ScooterOverview";
 import ScooterColours from "./pages/ScooterColours";
+
 // import ExtendedWarranty from "./pages/Services/Maintenance/ExtendedWarranty";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               <RideCards />
               <ImageCarousel />
               <CommunityCarousel />
+
             </>
           }
         />

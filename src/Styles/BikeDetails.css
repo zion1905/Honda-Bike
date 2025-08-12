@@ -25,13 +25,18 @@
   transition: all 0.3s ease;
 }
 
-.bike-price {
-  font-size: 1.4rem;
+h1 .bike-price {
+  font-size: 1.3rem;
   color: #e53935;
   font-weight: bold;
   margin: 20px 0;
 }
-
+.bike-details{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  margin: 20px 0;
+}
 .color-picker {
   margin-top: 25px;
 }
@@ -68,3 +73,12 @@
     font-size: 1.2rem;
   }
 }
+
+
+
+
+
+
+
+
+
