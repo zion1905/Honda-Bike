@@ -9,7 +9,9 @@ const Navbar = () => {
   const handleMouseEnter = (menu) => {
     if (window.innerWidth > 768) setOpenDropdown(menu);
   };
-  const handleMouseLeave = () => setOpenDropdown(null);
+  const handleMouseLeave = () => {
+    if (window.innerWidth > 768) setOpenDropdown(null);
+  };
 
   const toggleDropdown = (menu) => {
     if (openDropdown === menu) {
@@ -82,8 +84,9 @@ const Navbar = () => {
       </ul>
 
       <div className="navbar-icons">
-        <i className="fas fa-search"></i>
-        <i className="fas fa-bars" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}></i>
+        {/* <i className="fas fa-search"></i> */}
+       <i className="fa-solid fa-bars" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}></i>
+
       </div>
     </nav>
   );

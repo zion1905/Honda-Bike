@@ -36,28 +36,46 @@ image: "https://www.honda2wheelersindia.com/_next/image?url=https%3A%2F%2Fedge.s
 ];
 
 
+
+
   return (
-    <div className="scooter-list">
-      {scooters.map((scooter, index) => (
-        <div className="scooter-card" key={index}>
-          <img src={scooter.image} alt={scooter.name} />
-          <div className="scooter-card-content">
-            <h3>{scooter.name}</h3>
-            <p className="scooter-price">{scooter.price}</p>
-            <p className="scooter-price-note">{scooter.priceNote}</p>
-            <p className="scooter-description">{scooter.description}</p>
-            <Link
-              to="/scooter-overview-container"
-              state={{ scooter }}
-              className="scooter-explore"
-            >
-              Explore
-            </Link>
-          </div>
+    <div>
+      {/* 🚀 Banner Section */}
+      <div className="scooter-banner">
+        <img
+          src="https://www.vihaanhonda.com/assets/img/Activa_special_Edition_homeBanner.jpg"
+          alt="Scooter Banner"
+        />
+        <div className="banner-overlay">
+          <h1>Explore Our Scooters</h1>
+          <p>Find the perfect scooter for your ride</p>
         </div>
-      ))}
+      </div>
+
+      {/* 🚀 Scooter Grid Section */}
+      <div className="scooter-list">
+        {scooters.map((scooter, index) => (
+          <div className="scooter-card" key={index}>
+            <img src={scooter.image} alt={scooter.name} />
+            <div className="scooter-card-content">
+              <h3>{scooter.name}</h3>
+              <p className="scooter-price">{scooter.price}</p>
+              <p className="scooter-price-note">{scooter.priceNote}</p>
+              <p className="scooter-description">{scooter.description}</p>
+              <Link
+                to="/scooter-overview-container"
+                state={{ scooter }}
+                className="scooter-explore"
+              >
+                Explore
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default ScooterList;
+

@@ -15,7 +15,7 @@ import EVOverview from "./pages/EVOverview";
 import EVComparison from "./pages/EVComparison";
 import EVColours from "./pages/EVColours";
 import BikeList from "./pages/sales/BikeList ";
-import ContactForm from "./pages/ContactForm ";
+import ContactContainer from "./pages/ContactContainer";
 import BikeDetails from "./pages/BikeDetails";
 import ScooterOverview from "./pages/ScooterOverview";
 import ScooterColours from "./pages/ScooterColours";
@@ -47,7 +47,7 @@ function App() {
         {/* <Route path="/coverage-section" element ={<ExtendedWarranty/>}/> */}
         <Route path="/comparison-container" element = {<EVComparison/>} />
         <Route path="/ev-colours-container" element = {<EVColours/>} />
-        <Route path="/contact-container" element = {<ContactForm/>} />
+        <Route path="/contact-container" element = {<ContactContainer/>} />
                 <Route path="/bike-details-container" element={<BikeDetails />} />
    <Route path='/scooter-overview-container' element ={<ScooterOverview/>} />
    <Route path="/scooter-colours-container" element ={<ScooterColours/>} /> 
